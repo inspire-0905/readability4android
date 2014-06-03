@@ -1,12 +1,12 @@
 package com.swust.activity;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 
 import com.swust.SerializationDeserialization4Json.http.APIClient;
 
-public abstract class SwustActivity<T extends APIClient> extends FragmentActivity {
+public abstract class SwustActivity<T extends APIClient> extends Activity {
 	protected T client;
 	
 	
